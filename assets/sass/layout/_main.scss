@@ -1,0 +1,78 @@
+.hero{
+    display: flex;
+    height: 55vh;
+    &__content-img{
+        position: relative;
+        width: 70vw;
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+    &__stats{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2rem;
+        width: 45%;
+        background-color: $white;
+        padding: 1.5em 2.5em;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+    }
+    &__stat-item{
+        max-width: 8em;
+    }
+    &__number{
+        @include font-settings($font-xx-large, 500);
+        width: fit-content;
+    }
+    &__text{
+        @include font-settings($font-medium, 300);
+        font-family: $secondary-font;
+        vertical-align: bottom;
+        text-wrap: wrap;
+    }
+    &__content-title{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // width: max-content;
+        width: 30vw;
+    }
+    &__title {
+        @include font-settings($font-xxx-large, 400);
+        width: 50%;
+        padding-top: 5rem;
+    }
+    &__subtitle{
+        @include font-settings($font-large, 300);
+        width: 50%;
+        font-family: $secondary-font;
+        padding-top: 1em;
+    }
+    &__box {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: $buff;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        &--arrow {
+            @include font-settings($font-xxx-large, 700);
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            background-color: $flame;
+            color: $white;
+            bottom: 20px;
+            left: -20px;
+            z-index: 2;
+        }
+    }
+}

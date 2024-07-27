@@ -1,0 +1,53 @@
+.footer {
+  display: flex;
+  height: 35vh;
+  &__about-us {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+  }
+  &__content {
+    width: min-content;
+    padding: 5em 0 0 3em;
+  }
+  &__title {
+    @include font-settings($font-xx-large, 400);
+    text-wrap: nowrap;
+  }
+  &__text {
+    @include font-settings($font-medium, 400);
+    font-family: $secondary-font;
+    padding: 1.5em 2em 0 0;
+  }
+  &__img-container {
+    position: relative;
+    width: 45%;
+    height: auto;
+    padding: 1.5em 2.5em;
+    margin-bottom: 40px;
+    background-color: $blue-france;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    &--map {
+      width: 95%;
+      height: 95%;
+      position: absolute;
+      bottom: -20px;
+      left: -40px;
+    }
+    &--coffee-bean {
+      width: 100px;
+      height: 200px;
+      position: absolute;
+      top: 0;
+      left: -40px;
+    }
+  }
+  &__content-img {
+    position: relative;
+    width: 30vw;
+  }
+}

@@ -1,0 +1,28 @@
+.button {
+  @include font-settings($font-large, 500);
+  font-family: $primary-font;
+  text-wrap: nowrap;
+  padding: 10px;
+  cursor: pointer;
+
+  &__primary {
+    color: $quick-silver;
+    background-color: $white;
+    border: 1px solid $quick-silver;
+    &:hover {
+      color: $outer-space;
+      border: 1px solid $black;
+      transition: all .5s ease-in-out;
+    }
+  }
+  &__secondary {
+    color: $isabelline;
+    background-color: $shiny-shamrock;
+    border: 0;
+    &:hover {
+      color: $spanish-gray;
+      background-color: $turquoise;
+      transition: all .5s ease-in-out;
+    }
+  }
+}
