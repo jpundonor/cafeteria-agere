@@ -1,6 +1,6 @@
 .hero{
     display: flex;
-    height: 55vh;
+    height: 60vh;
     &__content-img{
         position: relative;
         width: 70vw;
@@ -47,7 +47,7 @@
     &__title {
         @include font-settings($font-xxx-large, 400);
         width: 50%;
-        padding-top: 5rem;
+        padding-top: 0.8em;
     }
     &__subtitle{
         @include font-settings($font-large, 300);
